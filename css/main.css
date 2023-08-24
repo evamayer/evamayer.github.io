@@ -17,12 +17,11 @@ td {
     font-weight: bold;
 }
 
-
 /* sql quiz component */
 
 sql-quiz .sqlQuizHomeDiv {
     margin: 1em 0em;
-    background: #f9f9f9;
+    background: #ff00e6;
     padding: 6px;
     border-radius: 6px;
     font-weight: 200;
@@ -77,8 +76,8 @@ sql-quiz .sqlQuizOutputArea .returnOkay {
 
 sql-exercise .sqlExHomeDiv {
     margin: 1em 0em;
-    font-family: Roboto, sans-serif;
-    background: #f9f9f9;
+    font-family: Helvetica, sans-serif;
+    background: #707880;
     padding: 6px;
     border-radius: 6px;
 }
@@ -103,7 +102,7 @@ sql-exercise .sqlExInputArea {
 sql-exercise .sqlExOutputArea {
     max-width: 52rem;
     overflow: auto;
-    background: #f9f9f9;
+    background: #707880;
 }
 
 sql-exercise .sqlExOutputArea .returnOkay {

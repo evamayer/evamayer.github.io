@@ -7,7 +7,7 @@ h2 {
 }
 
 .subtitle {
-    color: #ec5f67
+    color: #ffffff
 }
 
 p {
@@ -34,14 +34,16 @@ sql-exercise {
     text-align: center;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #b8b8b8;
-    background: #ff0000;
+    border-bottom: 1px solid #37474f;
+    background: #37474f;
 }
 
-/* .container {
-    background: #2c393f;
-} */
-
-/* .grid .grid-item {
-    background: #00aeff;
-} */
+h1.product-logo, .product-logo {
+    font-size: 3.82082rem;
+    font-family: "Salvo Serif Cond",Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
+    color: #f3797f;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}

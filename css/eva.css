@@ -29,3 +29,19 @@ font-size: 20px;
 sql-exercise {
     color: #ffffff
 }
+
+.header-product {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #b8b8b8;
+    background: #ff0000;
+}
+
+/* .container {
+    background: #2c393f;
+} */
+
+/* .grid .grid-item {
+    background: #00aeff;
+} */

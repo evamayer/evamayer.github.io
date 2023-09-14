@@ -62,7 +62,7 @@
             <div class="grid-item">
                 <h2</h2>
                 <p>
-                    This SQL Murder Mystery is designed to be both a tool to practice SQL concepts and a fun game to solve a fictional murder case.
+                    This SQL murder mystery is designed to be both a tool to practice SQL concepts and a fun game to solve a fictional murder case.
 
                 </p>
             </div>
@@ -87,8 +87,8 @@
                 <h3>Exploring the Database Structure</h3>
 
                 <p>
-                    This SQL Murder Mystery is built using SQLite. Use the below SQL command to find the tables
-                    in the Murder Mystery database.
+                    This SQL murder mystery is built using SQLite. Use the below SQL command to find the tables
+                    in the database.
                 </p>
 
                 <sql-exercise data-question="Run this query to find the names of the tables in this database."  data-default-text="SELECT name 
@@ -120,7 +120,7 @@
                 </p>
                 <p>
                     But <a id="show-schema">click here</a> to show the database diagram.
-                    <img id="experienced-schema" src="schema.png" width='1002' height='491'>
+                    <img id="experienced-schema" src="database_diagram.png" width='1002' height='491'>
                 </p>
                 <p>
                     
@@ -149,14 +149,19 @@
         <div id="credits" class="grid">
             <div class="grid-item">
                 <h3>Credits</h3>
-                <p>The Murder of a Data Analyst was created by Eva Mayer as a school project at Hyper Island in Stockholm. See the <a href="https://github.com/NUKnightLab/sql-mysteries">GitHub repository</a>                    for more information.</p>
+                <p>The Murder of a Data Analyst was created by Eva Mayer as a school project at Hyper Island in Stockholm. See the <a href="https://github.com/evamayer/evamayer.github.io">GitHub repository</a>                    for more information.</p>
                 <p></p>
-                <p>This mystery was inspired by <a href="https://mystery.knightlab.com/">knight lab's SQL Murder Mystery.</a></p>
+                <p>This mystery was inspired by and based on <a href="https://mystery.knightlab.com/">knight lab's SQL Murder Mystery.</a></p>
             
             </div>
         </div>
     </div>
 
+    <script type="text/javascript">
+        document.querySelector('#show-schema').addEventListener('click', function() {
+            document.querySelector('#experienced-schema').classList.add('show');
+        })
+    </script>
 </body>
 
 </html>

@@ -48,3 +48,8 @@ h1.product-logo, .product-logo {
     margin-bottom: 0;
     font-weight: normal;
 }
+
+strong {
+    font-weight: bold;
+    color:#f3c9b0;
+}

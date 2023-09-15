@@ -1,7 +1,7 @@
 .cm-s-neat span.cm-comment { color: #ea9560; }
 .cm-s-neat span.cm-keyword { line-height: 1em; font-weight: bold; color: #89ddff; }
 .cm-s-neat span.cm-string { color: #ec5f67; }
-.cm-s-neat span.cm-builtin { line-height: 1em; font-weight: bold; color: #077; }
+.cm-s-neat span.cm-builtin { line-height: 1em; font-weight: bold; color: #ffffff; }
 .cm-s-neat span.cm-special { line-height: 1em; font-weight: bold; color: #0aa; }
 .cm-s-neat span.cm-variable { color: rgb(0, 0, 0); }
 .cm-s-neat span.cm-number, .cm-s-neat span.cm-atom { color: #ffcc00; }

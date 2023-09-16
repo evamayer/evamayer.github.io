@@ -39,3 +39,11 @@
     border-right: none;
     width: 0
 }
+
+.CodeMirror-selected {
+    background: #37474f
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: #707880
+}

@@ -53,3 +53,16 @@ strong {
     font-weight: bold;
     color:#f3c9b0;
 }
+
+a {
+    color: #80cbc4;
+    transition: unset;
+    text-decoration: none;
+    position: relative;
+    text-shadow: unset;
+    background-image: unset;
+}
+
+a:hover {
+    color: #2cf5e0;
+}

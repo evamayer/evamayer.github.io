@@ -1,0 +1,65 @@
+Get crime scene report:
+
+SELECT *
+  FROM crime_scene_report
+ WHERE date = "2023-01-06" AND 
+       city = "Baltimore" AND 
+       type = "murder";
+
+
+Look up victim's shift on the day of the murder:
+
+SELECT person_info.employee_id,
+       first_name,
+       last_name,
+       shift_id
+  FROM person_info
+       JOIN
+       employee_shift_jan6 ON person_info.employee_id = employee_shift_jan6.employee_id
+ WHERE first_name = "Emily" AND 
+       last_name = "Justis";
+
+
+Get all riding club member male employees on shift 2 from the Baltimore office:
+
+SELECT person_info.employee_id,
+       gender,
+       shift_id
+  FROM person_info
+       JOIN
+       employee_shift_jan6 ON person_info.employee_id = employee_shift_jan6.employee_id
+       JOIN
+       riding_club_membership ON person_info.national_id = riding_club_membership.national_id
+       JOIN
+       employee ON person_info.employee_id = employee.id
+ WHERE employee_shift_jan6.shift_id = 2 AND 
+       gender = "Male" AND 
+       employee.office_id = 115;
+
+
+Change radio button to 2022 on dashboard, notice a number of employees with very high total expenses. Find them:
+
+SELECT employee_id,
+       SUM(approved_amount) 
+  FROM expense
+       JOIN
+       employee_expense ON expense.id = employee_expense.expense_id
+ WHERE expense.payment_date > "2021-12-31"
+ GROUP BY employee_id
+ ORDER BY SUM(approved_amount) DESC
+ LIMIT 5;
+
+
+Cross-reference the results of the last two queries and find the only one common employee number. You found the killer.
+
+Get their name:
+
+SELECT employee_id,
+       first_name,
+       last_name
+  FROM person_info
+ WHERE employee_id = 10921;
+
+
+Enter the full name into the solution box.
+
